@@ -14,7 +14,7 @@ export class SignComponent implements OnInit {
     password: ['', [Validators.required]]
   })
 
-  public msgError:string = '';
+  public msgError!:string;
 
   constructor(private formBuilder: FormBuilder, private authService: AuthService) { }
 
